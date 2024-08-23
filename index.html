@@ -1,0 +1,138 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex, follow">
+    <title>Trading Sessions</title>
+<script src="http://localhost/myscript/sc/session/js/script1.js"></script><script src="http://localhost/myscript/sc/session/js/script2.js"></script><script src="http://localhost/myscript/sc/session/js/script3.js"></script><script src="http://localhost/myscript/sc/session/js/script4.js"></script><script src="http://localhost/myscript/sc/session/js/script5.js"></script></head>
+<body>
+<div>
+    <section aria-labelledby="market-hours-heading" id="market-hours-section" class="portlet-flex marketDiv" style="">
+        <header class="portlet-title">
+            <div class="title-and-icon">
+                <h2 id="market-hours-heading">
+                        <span>Trading Sessions</span>
+                </h2>
+                <i class="circle-info-svg" data-bs-toggle="popover" data-bs-title="Live Markets Info" data-bs-content="Current open markets, updated in real time. Time bar progresses from right to left." data-placement="bottom"></i>
+            </div>
+            <div class="ggl-apple-icons">
+                <a href="https://www.prof-fx.com/" target="_blank">
+                        <span>Prof FX</span>
+                    </a>
+            </div>
+        </header>
+        <div id="marketWidgetLoader" class="display-flex" style="height: 357px;">
+            <div class='spinner-border margin-auto' role='status' style="color: black">
+                <span class='sr-only'> Loading...</span>
+            </div>
+        </div>
+        <div id="marketWidgetDashboard" style="display: none">
+            <input id="markets" value='[{"name":"new-york","openHour":8.0,"closeHour":17.0,"flagName":"united-states","timezoneDiff":-5.0,"isShown":true},{"name":"london","holidays":[1724630400000],"openHour":8.0,"closeHour":17.0,"flagName":"united-kingdom","timezoneDiff":0.0,"isShown":true},{"name":"tokyo","openHour":9.0,"closeHour":18.0,"flagName":"japan","timezoneDiff":9.0,"isShown":true},{"name":"sydney","openHour":9.0,"closeHour":18.0,"flagName":"australia","timezoneDiff":11.0,"isShown":true}]' style="display: none"/>
+            <div class="market-widget-border-bottom" style="background: #0ca0a0">
+                <div id="marketsNew" style="min-height: 220px; max-width: 388px; margin: auto">
+                    <div id="timeline" style="left: 0"></div>
+                    <div id="new-yorkM" class="marketNew">
+                        <span title="United States" class="united-states-flag-svg"></span>
+                        New York
+                        <span class="day-time"></span>
+                    </div>
+                    <div id="londonM" class="marketNew">
+                        <span title="United Kingdom" class="united-kingdom-flag-svg"></span>
+                        London
+                        <span class="day-time"></span>
+                    </div>
+                    <div id="tokyoM" class="marketNew">
+                        <span title="Japan" class="japan-flag-svg"></span>
+                        Tokyo
+                        <span class="day-time"></span>
+                    </div>
+                    <div id="sydneyM" class="marketNew">
+                        <span title="Australia" class="australia-flag-svg"></span>
+                        Sydney
+                        <span class="day-time"></span>
+                    </div>
+                    <div class="margin-top-29"></div>
+                </div>
+            </div>
+            <div class="market-widget-table-border-top">
+                <table class="table">
+                        <tr data-market-name="new-york">
+                            <td class="market-country display-flex">
+                                <div>
+                                    <i class="market-status  moon-svg "></i>
+                                    <span class="country-market-name bold">
+                                    New York
+                                </span>
+                                </div>
+                            </td>
+                            <td class="align-right">
+                                <div>
+                                <span class="time-status">
+                                        opens in
+                                </span>
+                                    <span class="time-left"></span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr data-market-name="london">
+                            <td class="market-country display-flex">
+                                <div>
+                                    <i class="market-status  moon-svg "></i>
+                                    <span class="country-market-name bold">
+                                    London
+                                </span>
+                                </div>
+                            </td>
+                            <td class="align-right">
+                                <div>
+                                <span class="time-status">
+                                        opens in
+                                </span>
+                                    <span class="time-left"></span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr data-market-name="tokyo">
+                            <td class="market-country display-flex">
+                                <div>
+                                    <i class="market-status sun-svg "></i>
+                                    <span class="country-market-name bold">
+                                    Tokyo
+                                </span>
+                                </div>
+                            </td>
+                            <td class="align-right">
+                                <div>
+                                <span class="time-status">
+                                        closes in
+                                </span>
+                                    <span class="time-left"></span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr data-market-name="sydney">
+                            <td class="market-country display-flex">
+                                <div>
+                                    <i class="market-status sun-svg "></i>
+                                    <span class="country-market-name bold">
+                                    Sydney
+                                </span>
+                                </div>
+                            </td>
+                            <td class="align-right">
+                                <div>
+                                <span class="time-status">
+                                        closes in
+                                </span>
+                                    <span class="time-left"></span>
+                                </div>
+                            </td>
+                        </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+    <input type="hidden" id="dashboard.markets.closesIn" value="closes in">
+    <input type="hidden" id="dashboard.markets.opensIn" value="opens in">
+</div>
+</body>
+</html>
